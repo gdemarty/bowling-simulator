@@ -26,7 +26,7 @@ var BowlingFcts=function(){
 			function addRoll(){
 				pins = $("#pins").val();
 
-				if(pins % 1 != 0){
+				if(pins % 1 != 0 || !pins){
 					Swal.fire(
 					  'Error',
 					  'Please enter a valid number',
@@ -110,7 +110,12 @@ var BowlingFcts=function(){
 					url: "ajax/resetScore.php",
 				})
 				.done(function( msg ) {
+					//Clear tables
 					$("table div").empty();
+					//Clear #pins input
+					$("#pins").val("");
+					//Focus back to the #pins input
+					$("#pins").focus();
 
 					Swal.fire(
 					  'Reset',
