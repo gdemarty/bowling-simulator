@@ -26,7 +26,7 @@ var BowlingFcts=function(){
 			function addRoll(){
 				pins = $("#pins").val();
 
-				if(!pins){
+				if(!Number.isInteger(pins)){
 					Swal.fire(
 					  'Error',
 					  'Please enter a valid number',

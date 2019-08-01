@@ -29,7 +29,7 @@
 
     		<div class="row mt-5">
     			<div class="col-md-2">
-					<input id="pins" type="number" min="0" max="10" step="1" class="form-control mb-md-0 mb-2" />
+					<input id="pins" type="number" min="0" max="10" step="1" class="form-control mb-md-0 mb-2"/>
 				</div>
 				<div class="col-md-10 text-md-left text-right">
 					<button id="submitScore" class='btn btn-primary' >

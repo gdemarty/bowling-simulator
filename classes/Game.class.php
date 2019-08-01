@@ -41,16 +41,16 @@ class Game
 		//Is Max Rolled reached?
 		if($lastFrame == 9){
 			if(isset($this->frames[$lastFrame][0]) && isset($this->frames[$lastFrame][1]) && $this->frames[$lastFrame][0] + $this->frames[$lastFrame][1] != 10){
-				throw new Exception("The game is over. Please reset the game if you want to start a new one1");
+				throw new Exception("The game is over. Please reset the game if you want to start a new one");
 			}
 		}
 		elseif($lastFrame == 10 || $lastFrame == 11){
 			if($this->frames[9][0] != 10 && $this->frames[9][1] != 10){
-				throw new Exception("The game is over. Please reset the game if you want to start a new one2");
+				throw new Exception("The game is over. Please reset the game if you want to start a new one");
 			}
 		}
 		elseif($lastFrame == 12){
-			throw new Exception("The game is over. Please reset the game if you want to start a new one3");
+			throw new Exception("The game is over. Please reset the game if you want to start a new one");
 		}
 
 		//Update Frame property
